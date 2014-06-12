@@ -7,6 +7,7 @@
 //
 
 #import "ROViewController.h"
+#import "ROPopMenu.h"
 
 @interface ROViewController ()
 
@@ -17,6 +18,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    ROPopMenu *menu = [[ROPopMenu alloc] initWithIconImages:@[]];
+    [self.view addSubview:menu];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
